@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "simple_items")
-public class Item {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -40,17 +40,17 @@ public class Item {
         this.price = price;
     }
 
-    public Item() {
+    public Product() {
     }
 
-    public Item(String title, int price) {
+    public Product(String title, int price) {
         this.title = title;
         this.price = price;
     }
 
     @Override
     public String toString() {
-        return "Item{" +
+        return "Product{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", price=" + price +

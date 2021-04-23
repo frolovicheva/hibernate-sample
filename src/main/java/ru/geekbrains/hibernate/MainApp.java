@@ -24,8 +24,8 @@ public class MainApp {
             prepareData();
             try (Session session = factory.getCurrentSession()) {
                 session.beginTransaction();
-                Item item = session.get(Item.class, 1L);
-                System.out.println(item);
+                Product product = session.get(Product.class, 1L);
+                System.out.println(product);
                 session.getTransaction().commit();
             }
         } finally {

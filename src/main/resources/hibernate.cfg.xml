@@ -14,6 +14,6 @@
         <property name="show_sql">true</property>
         <property name="current_session_context_class">thread</property>
 
-        <mapping class="ru.geekbrains.hibernate.Item"/>
+        <mapping class="ru.geekbrains.hibernate.Product"/>
     </session-factory>
 </hibernate-configuration>
